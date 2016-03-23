@@ -20,7 +20,7 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service_label" translatesAutoresizingMaskIntoConstraints="NO" id="Sc5-zA-KvG">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="service_label" translatesAutoresizingMaskIntoConstraints="NO" id="Sc5-zA-KvG">
                         <rect key="frame" x="96" y="37" width="56" height="18"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="56" id="Iuo-Iv-3xR"/>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="o85-XW-rTP" customClass="CustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o85-XW-rTP" id="2Zg-jT-dUh">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="极品飞车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ8-Ci-9QG">
+                        <rect key="frame" x="14" y="36" width="72" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service_label" translatesAutoresizingMaskIntoConstraints="NO" id="Sc5-zA-KvG">
+                        <rect key="frame" x="96" y="37" width="56" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="Iuo-Iv-3xR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="减50.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFv-M1-8zM">
+                        <rect key="frame" x="105" y="39" width="37.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xQ8-Ci-9QG" firstAttribute="leading" secondItem="2Zg-jT-dUh" secondAttribute="leading" constant="14" id="4PZ-K9-OTM"/>
+                    <constraint firstItem="Sc5-zA-KvG" firstAttribute="centerY" secondItem="2Zg-jT-dUh" secondAttribute="centerY" id="7HM-bD-N9m"/>
+                    <constraint firstItem="Sc5-zA-KvG" firstAttribute="leading" secondItem="xQ8-Ci-9QG" secondAttribute="trailing" constant="10" id="VPc-fu-rgQ"/>
+                    <constraint firstItem="xQ8-Ci-9QG" firstAttribute="centerY" secondItem="2Zg-jT-dUh" secondAttribute="centerY" id="pu1-aC-gvP"/>
+                    <constraint firstItem="oFv-M1-8zM" firstAttribute="centerY" secondItem="2Zg-jT-dUh" secondAttribute="centerY" id="tLI-zi-PdC"/>
+                    <constraint firstItem="oFv-M1-8zM" firstAttribute="leading" secondItem="xQ8-Ci-9QG" secondAttribute="trailing" constant="19" id="tic-m0-nGw"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Sc5-zA-KvG" secondAttribute="trailing" constant="14" id="xAV-pA-ODV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="saveMoneyLabel" destination="oFv-M1-8zM" id="21f-oU-PmI"/>
+                <outlet property="tagImageView" destination="Sc5-zA-KvG" id="nsn-k2-xV3"/>
+                <outlet property="titleLabel" destination="xQ8-Ci-9QG" id="rbI-pu-zY9"/>
+                <outlet property="widthConstraint" destination="Iuo-Iv-3xR" id="ZvZ-7e-qdC"/>
+            </connections>
+            <point key="canvasLocation" x="210.5" y="289"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="service_label" width="54" height="18"/>
+    </resources>
+</document>
